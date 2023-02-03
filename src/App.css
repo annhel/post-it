@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+
+.containerNote{
+    background-color: rgb(25, 30, 53);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerLog{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.note{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 680px;
+    margin: auto;
+    text-overflow: ellipsis;
+    background-color: rgb(25, 30, 53);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.create{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 130px;
+    margin: auto;
+    padding-top: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.clear{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 130px;
+    margin: auto;
+    padding-bottom: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noteLog{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.table{
+    background-color: rgb(25, 30, 53);
+    padding: 15px;
+    width: fit-content;
+    border: 5px solid rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+.tHead{
+    border: 20px, solid, rgb(255, 255, 255);
+    background-color: #F5EFE4;
+    font-size: 28px;
+    color: #5784C9;
+}
+.tBody{
+    border: 20px, solid, rgb(255, 255, 255);
+    background-color: #F5EFE4;
+    font-size: 18px;
+    color: #536888;
+}
+
+.delButton{
+    width: 50px;
+    height: 35px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(87, 132, 201);
+    border-color: "transparent";
+    border-radius: 20;
+    font-size: 12px;
+}
+
+.clButton{
+    height: 40px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(87, 132, 201);
+    border-color: "transparent";
+    border-radius: 30;
+    font-size: 12px;
+    padding: 3px;
+}
+
+
+.crButton{
+    height: 40px;
+    font-weight: bold;
+    background-color: rgb(87, 132, 201);
+    color: white;
+    border-color: "transparent";
+    border-radius: 30;
+    font-size: 12px;
+    padding: 3px;
 }
