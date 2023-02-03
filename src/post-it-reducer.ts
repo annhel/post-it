@@ -1,6 +1,7 @@
 
 // 1. created a state - this is  what the user is changing on their end
 export type PostIt = {
+    id: string,
     title: string,
     body: string
 }
@@ -41,6 +42,7 @@ export function postItReducer(state: PostItState, action: PostItAction): PostItS
         }
         case "CREATE": {
             const postIt: PostIt = {
+                id: Math.random() + "",
                 title: newState.title,
                 body: newState.body
             }
@@ -58,7 +60,7 @@ export function postItReducer(state: PostItState, action: PostItAction): PostItS
             return newState
         }
         case "CLEAR_ONE": {
-            newState.allNotes = newState.allNotes.filter(n => n.title !== action.payload)
+            newState.allNotes = newState.allNotes.filter(n => n.id !== action.payload)
             return newState;
         }
     } 

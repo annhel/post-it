@@ -6,8 +6,8 @@ import './App.css'
 const initialPostItState: PostItState ={
     title: "",
     body: "",
-    newPostIt: {title: "", body: ""},
-    deletePostIt: {title: "", body: ""},
+    newPostIt: {title: "", body: "", id:""},
+    deletePostIt: {title: "", body: "", id:""},
     allNotes: []
 }
 
@@ -84,7 +84,7 @@ export function PostIt(){
                     </thead>
                     <tbody className="tBody">
                     <tr><td colSpan={2}>{pi.body}</td></tr>
-                    <tr><td><button className="delButton" onClick={() => {handleDeleteOne(pi.title)}}> Delete Note </button></td></tr>
+                    <tr><td><button className="delButton" onClick={() => {handleDeleteOne(pi.id.toString())}}> Delete Note </button></td></tr>
                     </tbody>
                 </table> 
         )}
